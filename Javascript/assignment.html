@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Java</h1> 
+    <button onclick="changeText()"> Click </button>   
+    
+    <script> 
+        function changeText(){
+            document.getElementById("title").innerHTML="Python";
+        }
+
+
+    </script>  
+
+
+
+
+
+
+    <input type="text" id="name">
+    <p id="output"></p> 
+
+    <script>
+        document.getElementById("name").addEventListener("input", function(){
+            document.getElementById("output").innerHTML= this.value;
+        });
+    </script> 
+
+   
+   
+   
+   
+   
+   
+    <button onclick="changeColor()">
+    Change Color
+   </button> 
+   <script>
+    function changeColor() 
+    {
+        document.body.style.backgroundColor = "skyblue";
+    }
+   </script> 
+
+
+
+
+
+
+
+
+
+
+
+   <h1 id="count">0</h1>
+   <button onclick="increase()"> Increase </button> 
+
+   <script>
+    let count=0;
+
+    function increase(){
+        count++;
+
+        document.getElementById("count").innerHTML= count;
+    }
+   </script> 
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+
+
+    
+
+    <script src="assignment.js"></script>  
+    
+    
+
+
+
+     
+
+    
+</body>
+</html>
